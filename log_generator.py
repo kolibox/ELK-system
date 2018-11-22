@@ -4,7 +4,7 @@
 import random, time, datetime, socket
 from contextlib import closing
 
-#555 28.10.2018 00:08:03 [111] CMD>  scp -i /soso/state/ssh_104 -P 1111 root@localhost:/mnt/ftp-data/unilink/uk/ukr_started_on_2018-10-27-22-38.pcap /soso/ip_source/TRAFFIC/FTP/FTP-01/
+
 
 
 
@@ -25,7 +25,7 @@ from contextlib import closing
 def randomLogLineLocal():
     fileSize = random.randint(100, 100000)
     dateTime = datetime.datetime(2018, random.randint(1, 12), random.randint(1, 28), random.randint(0, 23), random.randint(0, 59), random.randint(0, 59)).strftime("%d.%m.%Y %H:%M:%S")
-    resultLine = str(fileSize) + ' ' + str(dateTime) + ' [111] CMD>  cp /soso/state/ssh_104 -P 1111 root@localhost:/mnt/ftp-data/unilink/uk/111111/ukr_started_on_2018-10-27-22-38.pcap /soso/ip_source/TRAFFIC/FTP/FTP-01/'+'\n' 
+    resultLine = str(fileSize) + ' ' + str(dateTime) + ' [111] CMD>  cp /soso/state/ssh_104 -P 1111 root@localhost:/mnt/ftp-data/un//111111/ukr_started_on_2018-10-27-22-38.pcap /soso/ip_source/TRAFFIC/FTP/FTP-01/'+'\n' 
     print (resultLine)
     return resultLine
     
